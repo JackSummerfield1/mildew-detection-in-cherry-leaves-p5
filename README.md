@@ -70,6 +70,9 @@ To save time in this process, the IT team suggested an ML system that detects in
 - ### Business Requirement 2: Classification
   - We will create and fit an ML model to predict if a leaf is healthy or infected with powdery mildew. This will be a binary classification task as there are only 2 categories to identify.
 
+- ### Business Requirement 3: Report
+  - We want to generate reports of the model that is accessible to all users so that the data can be interpreted and understood.
+
 ## ML Business Case
 
 - In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
