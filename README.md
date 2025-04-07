@@ -54,7 +54,11 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Hypothesis and how to validate?
 
-- List here your project hypothesis(es) and how you envision validating it (them).
+- Null Hypothesis (H₀): A binary classification model cannot accurately predict mildew presence on cherry leaves.
+- Alternative Hypothesis (H₁): A binary classification model can accurately predict mildew presence on cherry leaves.
+
+- We suspect cherry leaves with powdery mildew have visual defects, normally this is indicated by numerous white/ grayish powdery spots covering a large area of the leaf, compared to that of healthy cherry leaves.
+  - An average image study can assist in the investigation.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
