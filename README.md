@@ -67,6 +67,9 @@ To save time in this process, the IT team suggested an ML system that detects in
   - An average healthy cherry leaf and an average mildew infected leaf will also be displayed to show the differentiation of each.
   - We will display a gallery of images for healthy cherry leaves or mildew infected leaves.
 
+- ### Business Requirement 2: Classification
+  - We will create and fit an ML model to predict if a leaf is healthy or infected with powdery mildew. This will be a binary classification task as there are only 2 categories to identify.
+
 ## ML Business Case
 
 - In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
