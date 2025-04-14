@@ -43,3 +43,28 @@ def plot_prediction_probs(pred_proba, pred_class):
         my_img = np.expand_dims(img_resized, axis=0)/255
 
         return my_img
+    
+    def load_model_and_predict(my_img, version):
+        """
+        Making ML predictions on live images
+        """
+
+        model = load_model(f"outputs/{version}/powdery_mildew_model.h5")
+
+        pred_proba = model.predict(my_img)[0, 0]
+
+        target_map = {v: k for k, v in {'Healthy': 0, 'Powdery Mildew': 1}.items()}
+        pred_class = target_map[pred_proba > 0.5]
+        if pred_class == target_map[0]:
+            pred_proba = 1 - pred_proba
+
+        if pred_class == 'Healthy':
+            st.write(
+                f"The predictive analysis indicates that the cherry leaf is "
+                f"**healthy**")
+        else:
+            st.write(
+                f"The predictive analysis indicates that the cherry leaf has "
+                f"**powdery mildew**")
+
+        return pred_proba, pred_class
