@@ -32,3 +32,14 @@ def plot_prediction_probs(pred_proba, pred_class):
             range_y=[0,1],
             width=800, height=400,template='seaborn')
     st.plotly_chart(fig)
+
+    def resize_input_image(img, version):
+        """
+        Reshape image to the average image size
+        """
+
+        img_shape = load_pkl_file(file_path=f"outputs/{version}/img_shape.pkl")
+        img_resized = img.resize((img_shape[1], img_shape[0]), Image.LANCZOS)
+        my_img = np.expand_dims(img_resized, axis=0)/255
+
+        return my_img
