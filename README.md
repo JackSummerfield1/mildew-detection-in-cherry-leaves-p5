@@ -51,11 +51,21 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Hypothesis and how to validate?
 
+### Hypothesis 1
+
 - Null Hypothesis (H₀): A binary classification model cannot accurately predict mildew presence on cherry leaves.
 - Alternative Hypothesis (H₁): A binary classification model can accurately predict mildew presence on cherry leaves.
 
 - We suspect cherry leaves with powdery mildew have visual defects, normally this is indicated by numerous white/ grayish powdery spots covering a large area of the leaf, compared to that of healthy cherry leaves.
   - An average image study can assist in the investigation.
+
+### Hypothesis 2
+
+- Null Hypothesis (H₀): There is no significant visual difference between healthy and mildew-infected cherry leaves observable through average and variability image analysis.
+- Alternative Hypothesis (H₁): There are significant visual differences between healthy and mildew-infected cherry leaves, which can be identified through average and variability image analysis.
+
+- We suspect that leaves infected with powdery mildew will consistently display visual patterns, such as white or grayish spots, that differ from those on healthy leaves.
+  - An analysis of average and variability images should help reveal these differences and assist in early detection without the use of a predictive model.
 
 [Back to top](#table-of-contents)
 
