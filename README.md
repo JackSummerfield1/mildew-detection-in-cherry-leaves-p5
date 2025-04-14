@@ -27,6 +27,9 @@
 
 ## Introduction
 
+This project is a data science and machine learning (ML) project that uses predictive analytics to tell the difference between 2 different sets of images.
+The business goal is to assist the client, who is dealing with an infestation of powdery mildew in its cherry tree plantations.
+
 ## Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
