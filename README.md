@@ -192,6 +192,22 @@ The main libraries used were:
 
 ### Python Validation
 
+The code in the Jupyter notebooks was validated using pycodestyle, which was installed through the following command:
+`pip install pep8 pycodestyle pycodestyle_magic`.
+
+It was implemented using a cell at the top of each page containing the following:
+
+```
+%load_ext pycodestyle_magic
+%pycodestyle_on
+```
+
+A copy was made of each notebook, which was run with pycodestyle enabled, there were no errors.
+
+The python code for the app pages and files for data management and predictive analysis was validated using a [PEP8 linter](https://pep8ci.herokuapp.com/).
+
+[Back to top](#table-of-contents)
+
 ## Credits
 
 - [ChatGPT](https://www.chat.openai.com) was used for gathering information on powdery mildew and assistance in refactoring some of the code
