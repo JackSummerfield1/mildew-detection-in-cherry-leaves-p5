@@ -16,3 +16,9 @@ class MultiPage:
         st.set_page_config(
             page_title=self.app_name,
             page_icon="🍒")
+    
+        def add_page(self, title, func) -> None:
+            """
+            Add pages to app
+            """
+            self.pages.append({"title": title, "function": func})
