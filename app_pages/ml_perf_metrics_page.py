@@ -32,3 +32,12 @@ def ml_performance_metrics():
     st.write("### Generalised Performance on Test Set")
     st.dataframe(pd.DataFrame(load_test_evaluation(version),
                  index=['Loss', 'Accuracy']))
+    
+    st.write("### Conclusion")
+    st.success(
+    "* At the start of this project, the client requested a machine learning model "
+    "capable of predicting the presence of mildew on cherry leaves with at least 97% accuracy.\n"
+    "* As shown in the performance table above, the final model achieved 99% accuracy "
+    "on the test dataset. This exceeds the required threshold, and we can therefore consider "
+    "this business requirement fulfilled."
+    )
