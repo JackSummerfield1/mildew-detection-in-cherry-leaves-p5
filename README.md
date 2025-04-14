@@ -30,10 +30,14 @@
 This project is a data science and machine learning (ML) project that uses predictive analytics to tell the difference between 2 different sets of images.
 The business goal is to assist the client, who is dealing with an infestation of powdery mildew in its cherry tree plantations.
 
+[Back to top](#table-of-contents)
+
 ## Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 - The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
+
+[Back to top](#table-of-contents)
 
 ## Business Requirements
 
@@ -45,6 +49,8 @@ To save time in this process, the IT team suggested an ML system that detects in
 - 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 - 3 - The client is interested in being able to download the reports made so that they can keep a record of the predicitions.
 
+[Back to top](#table-of-contents)
+
 ## Hypothesis and how to validate?
 
 - Null Hypothesis (H₀): A binary classification model cannot accurately predict mildew presence on cherry leaves.
@@ -52,6 +58,8 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 - We suspect cherry leaves with powdery mildew have visual defects, normally this is indicated by numerous white/ grayish powdery spots covering a large area of the leaf, compared to that of healthy cherry leaves.
   - An average image study can assist in the investigation.
+
+[Back to top](#table-of-contents)
 
 ## The Rationale to Map the Business Requirements to the Data Visualisations and ML Tasks
 
@@ -66,6 +74,8 @@ To save time in this process, the IT team suggested an ML system that detects in
 - ### Business Requirement 3: Report
   - We want to generate reports of the model that is accessible to all users so that the data can be interpreted and understood.
 
+[Back to top](#table-of-contents)
+
 ## ML Business Case
 
 - Based on existing data, we want to predict if a cherry leaf is infected with podwery mildew or not, through the use of a machine learning model. It will be a supervised model, a binary classification model.
@@ -73,6 +83,8 @@ To save time in this process, the IT team suggested an ML system that detects in
 - The model success metrics are: 99% accuracy
 - The model output is defined as a flag, identifying if the leaf has mildew or not, along with it comes its respective probability of being infected or not. The staff should upload the picture to the app and a prediction will be made.
 - The training data to fit the model comes from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). 
+
+[Back to top](#table-of-contents)
 
 ## Dashboard Design
 
@@ -130,6 +142,8 @@ This page contains the following:
 
 - No known unfixed bugs
 
+[Back to top](#table-of-contents)
+
 ## Deployment
 
 ### Render
@@ -142,6 +156,8 @@ This page contains the following:
 3. Select your repository name.
 4. In the Start Command section you should write: ```streamlit run app.py```
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click the link at the top of the page beneath your repository to access your App.
+
+[Back to top](#table-of-contents)
 
 ## Main Data Analysis and Machine Learning Libraries
 
@@ -185,6 +201,8 @@ The main libraries used were:
 - [YouTube](https://www.youtube.com) was used for assistance on creating the streamlit dashboard
 - The Malaria Walkthrough Project from Code Institute was used extensively throughout the course of this project.
 - I have accredited streamlit documentation in the code itself when I used it to help out.
+
+[Back to top](#table-of-contents)
 
 ## Acknowledgements
 
