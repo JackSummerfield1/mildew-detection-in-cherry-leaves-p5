@@ -15,7 +15,7 @@
 7. [Dashboard Design](#dashboard-design)
 8. [Unfixed Bugs](#unfixed-bugs)
 9. [Deployment](#deployment)
-    1. [Heroku](#heroku)
+    1. [Render](#render)
 10. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
 11. [Other technologies used](#other-technologies-used)
 12. [Testing](#testing)
@@ -132,18 +132,16 @@ This page contains the following:
 
 ## Deployment
 
-### Heroku
+### Render
 
-- The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
-- Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-- The project was deployed to Heroku using the following steps.
+- The App live link is: `[https://mildew-detection-in-cherry-leaves-p5.onrender.com/]`
+- The project was deployed to render.com using the following steps.
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the .slugignore file.
+1. Log in to Render and click the **+New** button in the top right hand corner.
+2. Then select the **Web Service** option.
+3. Select your repository name.
+4. In the Start Command section you should write: ```streamlit run app.py```
+5. The deployment process should happen smoothly if all deployment files are fully functional. Click the link at the top of the page beneath your repository to access your App.
 
 ## Main Data Analysis and Machine Learning Libraries
 
