@@ -188,4 +188,6 @@ The main libraries used were:
 
 ## Acknowledgements
 
-- Thank the people who provided support throughout this project.
+- I would like to thank my mentor, Mo Shami, for providing guidance during my project.
+
+[Back to top](#table-of-contents)
