@@ -1,5 +1,31 @@
 # Mildew Detection in Cherry Leaves
+
 ![Responsiveness of Site](README-images/responsive_test.png)
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Dataset Content](#dataset-content)
+3. [Business Requirements](#business-requirements)
+4. [Hypotheses and validation](#hypothesis-and-how-to-validate)
+5. [The Rationale to Map the Business Requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+   - [Answering Business Requirement 1](#business-requirement-1-data-visualisation)
+   - [Answering Business Requirement 2](#business-requirement-2-classification)
+   - [Answering Business Requirement 3](#business-requirement-3-report)
+6. [ML Business Case](#ml-business-case)
+7. [Dashboard Design](#dashboard-design)
+8. [Unfixed Bugs](#unfixed-bugs)
+9. [Deployment](#deployment)
+    1. [Heroku](#heroku)
+10. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+11. [Other technologies used](#other-technologies-used)
+12. [Testing](#testing)
+    1. [Python Validation](#python-validation)
+13. [Credits](#credits)
+    1. [Content](#content)
+    2. [Media](#media)
+14. [Acknowledgements](#acknowledgements)
+
+## Introduction
 
 ## Dataset Content
 
@@ -14,6 +40,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 - 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 - 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+- 3 - The client is interested in being able to download the reports made so that they can keep a record of the predicitions.
 
 ## Hypothesis and how to validate?
 
@@ -23,7 +50,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 - We suspect cherry leaves with powdery mildew have visual defects, normally this is indicated by numerous white/ grayish powdery spots covering a large area of the leaf, compared to that of healthy cherry leaves.
   - An average image study can assist in the investigation.
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
+## The Rationale to Map the Business Requirements to the Data Visualisations and ML Tasks
 
 - ### Business Requirement 1: Data Visualisation
   - The average (mean) and variability (standard deviation) of the images for, healthy and mildew cherry leaves, will be presented.
@@ -72,6 +99,12 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 - Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
 
+## Other technologies used
+
+## Testing
+
+### Python Validation
+
 ## Credits
 
 - In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
@@ -88,6 +121,6 @@ To save time in this process, the IT team suggested an ML system that detects in
 - The photos used on the home and sign-up page are from This Open-Source site.
 - The images used for the gallery page were taken from this other open-source site.
 
-## Acknowledgements (optional)
+## Acknowledgements
 
 - Thank the people who provided support throughout this project.
