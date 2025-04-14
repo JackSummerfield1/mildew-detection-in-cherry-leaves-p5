@@ -8,6 +8,11 @@ import streamlit as st
 
 
 def download_dataframe_as_csv(df):
+    """
+    Display a Streamlit download button for a DataFrame as CSV
+    Full credit to the streamlit documentation on how to use the st.download_button():
+    https://docs.streamlit.io/develop/api-reference/widgets/st.download_button
+    """
     datetime_now = datetime.now().strftime("%d%b%Y_%Hh%Mmin%Ss")
     csv = df.to_csv().encode()
     st.download_button(
