@@ -70,14 +70,61 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 - Based on existing data, we want to predict if a cherry leaf is infected with podwery mildew or not, through the use of a machine learning model. It will be a supervised model, a binary classification model.
 - Ideally, this should eliminate the timely process of allocating a team member to diagnose whether a leaf has mildew or not and effectively deduce the outcome through this model.
-- The model success metrics are: TBC
+- The model success metrics are: 99% accuracy
 - The model output is defined as a flag, identifying if the leaf has mildew or not, along with it comes its respective probability of being infected or not. The staff should upload the picture to the app and a prediction will be made.
 - The training data to fit the model comes from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). 
 
 ## Dashboard Design
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+The dashboard was made using Streamlit and has been designed to be easy to use and functional. It contains the following:
+
+1. Project Summary
+
+![Project Summary Page](README-images/project_summary.png)
+
+This is the primary page the user is introduced with. It is intended to provide a new user with relevant information that explains what the entire application is trying to achieve.
+
+* General Information
+* Dataset Information
+* Link to README.md
+* Business Requirements
+
+2. Image Visualiser
+
+![Image Visualiser Page](README-images/img_visualiser.png)
+
+This page contains the following:
+
+* Business Requirement 1
+* Checkbox I: Show Average and Variability Images
+* Checkbox II: Show Comparison of Average Healthy and Powdery Mildew Images
+* Checkbox III: Image Gallery
+
+3. Mildew Detector
+
+![Mildew Detector Page](README-images/mildew_detector.png)
+
+This page contains the following:
+
+* Business Requirements 2 and 3
+* Link to Kaggle Dataset used in the Project
+* Button to upload images to make predictions on
+* Link to download report in .csv format
+
+4. Project Hypotheses
+
+5. Performance Metrics
+
+![Performance Metrics Page](README-images/performance_metrics.png)
+
+This page contains the following:
+
+* Train, Validation and Test Set: Label Frequencies
+* Model History
+* Generalised Performance on Test Set
+* Conclusion
+
+[Back to top](#table-of-contents)
 
 ## Unfixed Bugs
 
