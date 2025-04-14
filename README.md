@@ -145,7 +145,20 @@ This page contains the following:
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+The main libraries used were: 
+* numpy 1.26.1 - used to convert information to arrays
+* pandas 2.1.1 - used for converting information to a dataframe and saving as such
+* matplotlib 3.4.0 - used to plot the distribution of datasets
+* seaborn 0.13.2 - used for making statistical graphics
+* plotly 5.10.0 - used for plotting results of ML model training
+* Pillow 10.0.1 - used to adjust images
+* streamlit 1.40.2 - used to create the dashboard's interface
+* joblib 1.4.2 - used for runnning tasks in parallel
+* scikit-learn 1.3.1 - used for model evaluation
+* tensorflow-cpu 2.16.1 - used for model creation
+* keras 3.0.0 - used to set hyperparameters for the model
+
+[Back to top](#table-of-contents)
 
 ## Other technologies used
 
