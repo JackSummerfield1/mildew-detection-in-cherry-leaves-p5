@@ -33,38 +33,38 @@ def plot_prediction_probs(pred_proba, pred_class):
             width=800, height=400,template='seaborn')
     st.plotly_chart(fig)
 
-    def resize_input_image(img, version):
-        """
-        Reshape image to the average image size
-        """
+def resize_input_image(img, version):
+    """
+    Reshape image to the average image size
+    """
 
-        img_shape = load_pkl_file(file_path=f"outputs/{version}/img_shape.pkl")
-        img_resized = img.resize((img_shape[1], img_shape[0]), Image.LANCZOS)
-        my_img = np.expand_dims(img_resized, axis=0)/255
+    img_shape = load_pkl_file(file_path=f"outputs/{version}/img_shape.pkl")
+    img_resized = img.resize((img_shape[1], img_shape[0]), Image.LANCZOS)
+    my_img = np.expand_dims(img_resized, axis=0)/255
 
-        return my_img
-    
-    def load_model_and_predict(my_img, version):
-        """
-        Making ML predictions on live images
-        """
+    return my_img
 
-        model = load_model(f"outputs/{version}/powdery_mildew_model.h5")
+def load_model_and_predict(my_img, version):
+    """
+    Making ML predictions on live images
+    """
 
-        pred_proba = model.predict(my_img)[0, 0]
+    model = load_model(f"outputs/{version}/powdery_mildew_model.h5")
 
-        target_map = {v: k for k, v in {'Healthy': 0, 'Powdery Mildew': 1}.items()}
-        pred_class = target_map[pred_proba > 0.5]
-        if pred_class == target_map[0]:
-            pred_proba = 1 - pred_proba
+    pred_proba = model.predict(my_img)[0, 0]
 
-        if pred_class == 'Healthy':
-            st.write(
-                f"The predictive analysis indicates that the cherry leaf is "
-                f"**healthy**")
-        else:
-            st.write(
-                f"The predictive analysis indicates that the cherry leaf has "
-                f"**powdery mildew**")
+    target_map = {v: k for k, v in {'Healthy': 0, 'Powdery Mildew': 1}.items()}
+    pred_class = target_map[pred_proba > 0.5]
+    if pred_class == target_map[0]:
+        pred_proba = 1 - pred_proba
 
-        return pred_proba, pred_class
+    if pred_class == 'Healthy':
+        st.write(
+            f"The predictive analysis indicates that the cherry leaf is "
+            f"**healthy**")
+    else:
+        st.write(
+            f"The predictive analysis indicates that the cherry leaf has "
+            f"**powdery mildew**")
+
+    return pred_proba, pred_class
