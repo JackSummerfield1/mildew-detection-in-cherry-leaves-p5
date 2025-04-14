@@ -21,3 +21,6 @@ def download_dataframe_as_csv(df):
         file_name=f"Report_{datetime_now}.csv",
         mime='text/csv'
     )
+
+def load_pkl_file(file_path):
+    return joblib.load(filename=file_path)
