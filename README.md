@@ -2,6 +2,10 @@
 
 ![Responsiveness of Site](README-images/responsive_test.png)
 
+## Deployed Site
+
+Click [HERE](https://mildew-detection-in-cherry-leaves-p5.onrender.com/) to go to the Live Site!
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Dataset Content](#dataset-content)
