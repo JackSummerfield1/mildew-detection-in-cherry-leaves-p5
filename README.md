@@ -180,19 +180,11 @@ The main libraries used were:
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
-
-### Content
-
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
+- [ChatGPT](https://www.chat.openai.com) was used for gathering information on powdery mildew and assistance in refactoring some of the code
+- The cherry_leaves dataset was created by Code institute and taken from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves)
+- [YouTube](https://www.youtube.com) was used for assistance on creating the streamlit dashboard
+- The Malaria Walkthrough Project from Code Institute was used extensively throughout the course of this project.
+- I have accredited streamlit documentation in the code itself when I used it to help out.
 
 ## Acknowledgements
 
