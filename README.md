@@ -21,8 +21,6 @@
 12. [Testing](#testing)
     1. [Python Validation](#python-validation)
 13. [Credits](#credits)
-    1. [Content](#content)
-    2. [Media](#media)
 14. [Acknowledgements](#acknowledgements)
 
 ## Introduction
