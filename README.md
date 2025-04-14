@@ -1,4 +1,5 @@
 # Mildew Detection in Cherry Leaves
+![Responsiveness of Site](README-images/responsive_test.png)
 
 ## Dataset Content
 
