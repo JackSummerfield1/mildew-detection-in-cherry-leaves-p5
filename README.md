@@ -162,6 +162,18 @@ The main libraries used were:
 
 ## Other technologies used
 
+* Streamlit - used for dashboard development
+
+* Render - used to deploy the project as a web app.
+
+* Git/GitHub - used for version control and code storage
+
+* Gitpod - IDE used to develop the project
+
+* Am I responsive - used to produce screenshots of the project.
+
+[Back to top](#table-of-contents)
+
 ## Testing
 
 ### Python Validation
